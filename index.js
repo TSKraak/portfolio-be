@@ -5,16 +5,16 @@ const { PORT } = require("./config/constants");
 const authMiddleWare = require("./auth/middleware");
 const authRouter = require("./routers/auth");
 const userRouter = require("./routers/user");
-// const userRouter = require("./routers/user");
 const experienceRouter = require("./routers/experience");
 const projectRouter = require("./routers/project");
 const app = express();
 
-app.use(corsMiddleWare());
 app.use(loggerMiddleWare("dev"));
 
 const bodyParserMiddleWare = express.json();
 app.use(bodyParserMiddleWare);
+
+app.use(corsMiddleWare());
 
 app.use("/", authRouter);
 app.use("/user", userRouter);
