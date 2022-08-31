@@ -17,7 +17,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          project: "Rijksportaal - Intranet Dutch Government employees",
+          project: "Rijksportaal - Intranet Dutch Government",
           image:
             "https://res.cloudinary.com/leaves-client/image/upload/v1661787677/portfolio-pictures/rijksportaal_rvnusg.jpg",
           company: "Ministerie van Binnenlandse Zaken",
