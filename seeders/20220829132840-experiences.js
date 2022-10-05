@@ -6,7 +6,7 @@ module.exports = {
       "experiences",
       [
         {
-          title: "Supervisoer Building and housing",
+          title: "Supervisor Building and housing",
           logo: "https://res.cloudinary.com/leaves-client/image/upload/v1661787676/portfolio-pictures/gemeente-amsterdam_rvup3j.png",
           company: "Gemeente Amsterdam, Stadsdeel Centrum · Full-time",
           period: "Jul 2011 - Feb 2012 · 8 months",
