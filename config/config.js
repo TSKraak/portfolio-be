@@ -14,7 +14,6 @@ module.exports = {
     dialect: "postgres"
   },
   production: {
-    url: process.env.ELEPHANT_SQL,
     dialect: "postgres",
     use_env_variable: "DATABASE_URL",
     dialectOptions: {
