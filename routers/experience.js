@@ -13,7 +13,7 @@ router.get("/", async (req, res, next) => {
         .status(404)
         .json({ message: "Sorry. No experience results found." });
     }
-    res.json(exp);
+    res.json(exp.reverse());
   } catch (e) {
     console.log("ERROR:", e);
     res.status(404).json({ message: "Something went wrong, sorry" });

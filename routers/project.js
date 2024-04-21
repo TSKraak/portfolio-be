@@ -13,7 +13,7 @@ router.get("/", async (req, res, next) => {
         .status(404)
         .json({ message: "Sorry. No project results found." });
     }
-    res.json(exp);
+    res.json(exp.reverse());
   } catch (e) {
     console.log("ERROR:", e);
     res.status(404).json({ message: "Something went wrong, sorry" });
@@ -27,7 +27,7 @@ router.post("/", authMiddleware, async (req, res, next) => {
   if (!project || !company || !description) {
     return res
       .status(400)
-      .json({ message: "Please provide a title, company and description." });
+      .json({ message: "Please provide a project name, company and description." });
   }
 
   try {
